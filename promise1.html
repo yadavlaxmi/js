@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>promise</title>
+    </head>
+    <body>
+        <script>
+            // exectutor
+        const prom1 = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                let roll_no=[1,2,3,4,5];
+                resolve(roll_no);
+                reject("error while communicatity")
+            },2000);
+
+        });
+
+        prom1.then((roll_no) =>{
+            document.write(roll_no)
+        }).catch((error)=>{
+            document.write(error)
+        })
+
+        </script>
+        </body>
+        </html>
+
+        <!-- promise in constructor -->
